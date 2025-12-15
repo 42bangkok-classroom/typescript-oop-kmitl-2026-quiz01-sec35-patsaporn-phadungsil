@@ -1,5 +1,5 @@
 const leg = +process.argv[2];
-if (Number.isNaN(leg) || leg <= 0){
+if (Number.isNaN(leg) || leg <= 0 || leg != Math.floor(leg)){
     console.log("Invalid Input");
   process.exit()
 }
