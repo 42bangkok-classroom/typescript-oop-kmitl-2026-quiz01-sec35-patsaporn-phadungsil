@@ -1,6 +1,6 @@
 const mirror = +process.argv[2];
 
-if(Number.isNaN(mirror) || mirror <= 0 || Math.floor(mirror)){
+if(Number.isNaN(mirror) || mirror <= 0 || mirror != Math.floor(mirror)){
   console.log("Invalid Input");
   process.exit()
 }
